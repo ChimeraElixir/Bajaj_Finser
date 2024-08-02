@@ -30,7 +30,7 @@ const App = () => {
 
       // Send POST request to the backend
       const res = await axios.post(
-        "https://my-backend-gaurav-vermas-projects-a36d2ce4.vercel.app/bfhl",
+        "https://backend-chimera.onrender.com/bfhl",
         data
       )
       setResponse(res.data)
