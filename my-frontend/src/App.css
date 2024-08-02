@@ -40,3 +40,23 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+textarea {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 10px;
+}
+
+button {
+  margin: 10px;
+}
+
+select {
+  margin: 10px;
+}
