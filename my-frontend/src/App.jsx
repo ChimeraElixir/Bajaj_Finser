@@ -59,10 +59,38 @@ const App = () => {
       filteredResponse.highest_alphabet = response.highest_alphabet
     }
 
+    console.log(filteredResponse);
     return (
       <div className="response">
-        <h2>Response:</h2>
-        <pre>{JSON.stringify(filteredResponse, null, 2)}</pre>
+        <h2>Filtered Response:</h2>
+        {/* <pre>{JSON.stringify(filteredResponse?.alphabets, null, 2)}</pre> */}
+        <div>
+          {filteredResponse?.alphabets && (
+            <div>
+              Alphabets : {JSON.stringify(filteredResponse?.alphabets, null, 2)}
+            </div>
+          )}
+        </div>
+        <div>
+          {filteredResponse?.numbers && (
+            <div>
+              Numbers : {JSON.stringify(filteredResponse?.numbers, null, 2)}
+            </div>
+          )}
+        </div>
+
+        <div>
+          {filteredResponse?.highest_alphabet && (
+            <div>
+              Highest Alphabet: 
+              {JSON.stringify(filteredResponse?.highest_alphabet, null, 2)}
+            </div>
+          )}
+        </div>
+
+        {/* <pre>{filteredResponse.map((res,index)=>{
+          return (<div>{res.alphabets}</div>)
+        })}<pre> */}
       </div>
     )
   }
